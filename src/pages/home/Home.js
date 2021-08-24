@@ -1,5 +1,4 @@
 import React,{useEffect,useState }from 'react'
-import {Card} from 'react-bootstrap'
 import { useAuth0} from '@auth0/auth0-react'
 import {Image} from 'cloudinary-react'
 import Loading from '../../components/Loading'
@@ -7,7 +6,7 @@ import Loading from '../../components/Loading'
 import Axios from 'axios'
 function Home() {
     const [posts,setPosts] = useState([])
-    const { isLoading } = useAuth0();
+    
     
     
     
@@ -18,9 +17,7 @@ function Home() {
         })
     }, [])
 
-    if (isLoading){
-        return <Loading/>
-    }
+    
     
     return (
     <div className='container-fluid d-flex  mt-4 flex-column justify-content-center'>
