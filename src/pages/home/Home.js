@@ -19,7 +19,7 @@ function Home() {
        {posts.reverse().map((post) => {
            return(
                <div className="card mt-3 mx-auto shadow" style={{width:'22rem'}}>
-                <Image className="card-img-top" style={{width:'22rem',height:'21rem',objectFit:'fill'}} cloudName='ratishjaininc' publicId={post.image} />
+                <Image className="card-img-top" style={{width:'22rem',height:'21rem',objectFit:'cover'}} cloudName='ratishjaininc' publicId={post.image} />
                 <div className="card-body">
                 <h5 className="card-title">{post.author}</h5>
                 <p className="card-text">{post.caption}</p>
