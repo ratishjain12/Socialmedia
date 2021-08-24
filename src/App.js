@@ -71,7 +71,7 @@ function App() {
   </Navbar>
  
     <Switch>
-      <Route path="/" component = {Home} exact/>
+      <Route path="/" exact component = {Home} />
       <ProtectedRoute path="/profile" component = {Profile} />
       <ProtectedRoute path="/upload" component = {Upload} />
     </Switch>
