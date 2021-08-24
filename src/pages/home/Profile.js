@@ -46,6 +46,5 @@ const Profile = () => {
   );
 };
 
-export default withAuthenticationRequired(Profile, {
-    onRedirecting: () =><Loading type ='spin' color='blue'/>,
-  });
+export default Profile;
+    

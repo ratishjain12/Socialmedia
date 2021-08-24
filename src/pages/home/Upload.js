@@ -61,6 +61,5 @@ function Upload() {
     )
 }
 
-export default withAuthenticationRequired(Upload, {
-    onRedirecting: () => <Loading type ='spin' color='blue'/>,
-  });
+export default Upload;
+    

@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from './pages/home/Profile';
 import Upload from './pages/home/Upload'
+import  ProtectedRoute  from './components/protected-route'
 
 
 
@@ -71,8 +72,8 @@ function App() {
  
     <Switch>
       <Route path="/" component = {Home} exact/>
-      <Route path="/profile" component = {Profile} exact/>
-      <Route path="/upload" component = {Upload} exact/>
+      <ProtectedRoute path="/profile" component = {Profile} exact/>
+      <ProtectedRoute path="/upload" component = {Upload} exact/>
     </Switch>
   
     
