@@ -17,7 +17,7 @@ function App() {
   console.log(isAuthenticated)
   
   return (
-    <Router>
+    
       <div className="App">
       
       <Navbar bg="primary" expand="lg">
@@ -82,7 +82,7 @@ function App() {
 
 
     </div>
-    </Router>
+    
       
     
     
