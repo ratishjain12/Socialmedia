@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Auth0Provider } from "@auth0/auth0-react";
+import Auth0ProviderWithHistory from "./auth0-provider-with-history";
 
 ReactDOM.render(
-  <Auth0Provider
-    domain="ratishjain.us.auth0.com"
-    clientId="5W9jLARuwwQ4dx52eWcOdLZSgVDskz1H"
-    redirectUri={window.location.origin}
-  >
+  <Auth0ProviderWithHistory>
     <App />
-  </Auth0Provider>,
+  </Auth0ProviderWithHistory>,
   document.getElementById("root")
 );
 // If you want to start measuring performance in your app, pass a function
