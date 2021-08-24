@@ -8,7 +8,7 @@ function Home() {
     const [posts,setPosts] = useState([])
     
     useEffect(() => {
-        Axios.get('http://localhost:3001/api/posts').then((Response) =>{
+        Axios.get('https://socialmedia-mysql-deploy.herokuapp.com/api/posts').then((Response) =>{
             setPosts(Response.data)
             console.log(posts)
         })
