@@ -1,0 +1,9 @@
+.image__profile{
+    object-fit: contain;
+    width: 10rem !important;
+}
+.img{
+    object-fit: fill;
+    width:20rem;
+    height:18.5rem;
+}
