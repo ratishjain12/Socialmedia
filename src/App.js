@@ -72,8 +72,8 @@ function App() {
  
     <Switch>
       <Route path="/" component = {Home} exact/>
-      <ProtectedRoute path="/profile" component = {Profile} exact/>
-      <ProtectedRoute path="/upload" component = {Upload} exact/>
+      <ProtectedRoute path="/profile" component = {Profile} />
+      <ProtectedRoute path="/upload" component = {Upload} />
     </Switch>
   
     
