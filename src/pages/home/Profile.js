@@ -10,7 +10,7 @@ const Profile = () => {
   const [posts,setPosts] = useState([])
   
   useEffect(() => {
-    Axios.post('https://socialmedia-mysql-deploy.herokuapp.com/api/profile',{userid:user.sub}).then((Response)=>{
+    Axios.post('/api/profile',{userid:user.sub}).then((Response)=>{
         setPosts(Response.data)
         console.log(posts)
     })
