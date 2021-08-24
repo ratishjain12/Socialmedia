@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Axios from 'axios'
 
 
+
 function Upload() {
     const { user } = useAuth0();
     const [image,setImage] = useState()
@@ -26,7 +27,7 @@ function Upload() {
         })
 
         if (imageid){
-            Axios.post('https://socialmedia-mysql-deploy.herokuapp.com/api/upload',{post_id:user.sub,caption:caption,image:imageid,author:user.name}).then((Response)=>{
+            Axios.post('/api/upload',{post_id:user.sub,caption:caption,image:imageid,author:user.name}).then((Response)=>{
             console.log(Response)
             setStatus(true)
             })
