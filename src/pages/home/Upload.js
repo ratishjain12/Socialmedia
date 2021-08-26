@@ -45,9 +45,8 @@ function Upload() {
             <textarea className="form-control" aria-label="With textarea" onChange={(e)=>{setCaption(e.target.value)}}></textarea>
             </div>  
 
-            <form className='d-flex justify-content-center pt-4'>
             <button className="btn btn-primary mt-lg-3" type='submit' onClick={upload_image}> Upload </button>
-            </form>
+           
              
  
             
